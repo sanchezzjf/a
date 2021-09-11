@@ -18,7 +18,7 @@
 	- [ ] Deve exibir progresso de upload
 	- [ ] Deve ter função de upload drag and drop
 
-## Checklist Future Possible Features
+* Future Possible Features
 
 	- [ ] Mobile App
 	- [ ] Armazenamento em cloud(AWS)
