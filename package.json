@@ -1,0 +1,19 @@
+{
+  "name": "clone-drive",
+  "version": "1.0.0",
+  "description": "a clone of google drive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanchezzjf/drive-clone.git"
+  },
+  "author": "joao sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanchezzjf/drive-clone/issues"
+  },
+  "homepage": "https://github.com/sanchezzjf/drive-clone#readme"
+}
