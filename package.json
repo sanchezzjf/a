@@ -1,19 +1,27 @@
 {
-  "name": "clone-drive",
+  "name": "@sanchezzjf/sdrive-webapi",
   "version": "1.0.0",
-  "description": "a clone of google drive",
+  "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sanchezzjf/drive-clone.git"
+    "start": "mkdir -p downloads && node src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch --runInBand",
+    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --no-cache --runInBand --coverage"
   },
   "author": "joao sanchez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sanchezzjf/drive-clone/issues"
   },
-  "homepage": "https://github.com/sanchezzjf/drive-clone#readme"
+  "homepage": "https://github.com/sanchezzjf/drive-clone#readme",
+  "devDependencies": {
+    "jest": "^27.1.0"
+  },
+  "dependencies": {
+    "pino": "6.8",
+    "pino-pretty": "5.1",
+    "socket.io": "4.1"
+  }
 }
