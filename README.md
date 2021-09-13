@@ -18,8 +18,9 @@
 	- [ ] Deve exibir progresso de upload
 	- [ ] Deve ter função de upload drag and drop
 
-* Future Possible Features
+* Future Features
 
 	- [ ] Mobile App
 	- [ ] Armazenamento em cloud(AWS)
 	- [ ] Limite de armazenamento por usuário
+	- [ ] Criação de logins para usuário
