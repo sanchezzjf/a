@@ -4,7 +4,7 @@
 
 * WEB API
 
-	- [ ] Deve listar arquivos baixados
+	- [x] Deve listar arquivos baixados
 	- [ ] Deve receber stream de arquivos e salvar em disco
 	- [ ] Deve notificar sobre o progresso de armazenamento de arquivos em disco
 	- [ ] Deve permitir upload de arquivos de qualquer extensão/formato
