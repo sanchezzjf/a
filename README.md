@@ -5,10 +5,10 @@
 * WEB API
 
 	- [x] Deve listar arquivos baixados
-	- [ ] Deve receber stream de arquivos e salvar em disco
-	- [ ] Deve notificar sobre o progresso de armazenamento de arquivos em disco
-	- [ ] Deve permitir upload de arquivos de qualquer extensão/formato
-	- [ ] Deve atingir 100% de cobertura de código em testes
+	- [x] Deve receber stream de arquivos e salvar em disco
+	- [x] Deve notificar sobre o progresso de armazenamento de arquivos em disco
+	- [x] Deve permitir upload de arquivos de qualquer extensão/formato
+	- [x] Deve atingir 100% de cobertura de código em testes
 
 * WEB APP
 
