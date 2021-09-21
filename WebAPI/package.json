@@ -10,7 +10,7 @@
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch --runInBand",
     "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --no-cache --runInBand --coverage"
   },
-  "author": "joao sanchez",
+  "author": "joaosanchez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sanchezzjf/drive-clone/issues"
