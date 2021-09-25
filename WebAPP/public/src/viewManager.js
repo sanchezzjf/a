@@ -2,6 +2,10 @@ export default class ViewManager{
     constructor(){
         this.tbody = document.getElementById('tbody')
         this.newFileBtn = document.getElementById('newFileBtn')
+        this.fileElem = document.getElementById('fileElem')
+        this.progressModal = document.getElementById('progressModal')
+        this.progressBar = document.getElementById('progressBar')
+        this.output = document.getElementById('output')
 
         this.formatter = new Intl.DateTimeFormat('pt', {
             locale: 'pt-br',
@@ -11,15 +15,45 @@ export default class ViewManager{
             hour:'2-digit',
             minute: '2-digit'
         })
+
+        this.modalInstance = {}
+    }
+
+    configureModal(){
+        this.modalInstance = M.Modal.init(this.progressModal, {
+            opacity: 0,
+            dismissable: false,
+            //click on the screen even with modal opened
+            onOpenEnd(){
+                this.$overlay[0].remove()
+            }
+        })
+    }
+
+    openModal(){
+        this.modalInstance.open()
+    }
+
+    closeModal(){
+        this.modalInstance.close()
+    }
+
+    updateStatus(size){
+        this.output.innerHTML = `Uploading in <b>${Math.floor(size)}%</b>`
+        this.progressBar.value = size
+    }
+
+    configureOnFileChange(fn){
+        this.fileElem.onchange = (e) => fn(e.target.files)
     }
 
     configureFileBtnClick(){
-        this.newFileBtn
+        this.newFileBtn.onclick = () => this.fileElem.click()
     }
 
     getIcon(file){ 
-        return file.match(/\.mp4/i) ? 'movie' 
-            : file.match(/\.jp|png/i) ? 'image' : 'content_copy'
+        return file.match(/\.mp4|mkv/i) ? 'movie'
+            : file.match(/\.jp|png|bmp/i) ? 'image' : 'content_copy'
     }
 
     makeIcon(file){
@@ -31,7 +65,7 @@ export default class ViewManager{
         }
 
         return `
-        <i class='material-icons ${colors[icon]} left">${icon}</i>
+        <i class='material-icons ${colors[icon]} left'>${icon}</i>
         `
     }
 
