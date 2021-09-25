@@ -12,11 +12,11 @@
 
 * WEB APP
 
-	- [ ] Deve listar aquivos baixados
-	- [ ] Deve permitir fazer upload de arquivos de qualquer tamanho
-	- [ ] Deve ter função de upload via botão
-	- [ ] Deve exibir progresso de upload
-	- [ ] Deve ter função de upload drag and drop
+	- [x] Deve listar aquivos baixados
+	- [x] Deve permitir fazer upload de arquivos de qualquer tamanho
+	- [x] Deve ter função de upload via botão
+	- [x] Deve exibir progresso de upload
+	- [x] Deve ter função de upload drag and drop
 
 * Future Features
 
